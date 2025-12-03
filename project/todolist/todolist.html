@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Tasks - To-Do List</title>
+
+		<!-- Import font modern dari Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Link ke file CSS kita -->
+		<link rel="stylesheet" href="todolist.css" />
+
+		<!-- Library Confetti untuk animasi perayaan -->
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+	</head>
+	<body>
+		<!-- Container utama aplikasi -->
+		<div class="container">
+			<!-- Header aplikasi -->
+			<div class="app-header">
+				<h1 class="app-title">📝 My Tasks</h1>
+				<p class="app-subtitle">Kelola tugas-tugas Anda dengan mudah</p>
+			</div>
+
+			<!-- Progress Bar Section -->
+			<div class="progress-section">
+				<div class="progress-header">
+					<span id="motivationalText" class="motivational-text"
+						>Keep it up!</span
+					>
+					<div class="progress-circle">
+						<span id="progressPercentage">0%</span>
+					</div>
+				</div>
+				<div class="progress-bar-container">
+					<div id="progressBar" class="progress-bar"></div>
+				</div>
+			</div>
+
+			<!-- Card untuk input tugas baru -->
+			<div class="input-card glass">
+				<div class="input-wrapper">
+					<!-- Input field untuk mengetik tugas -->
+					<input
+						type="text"
+						id="taskInput"
+						class="task-input"
+						placeholder="Tulis tugas baru di sini..."
+						autocomplete="off"
+					/>
+					<!-- Tombol untuk menambah tugas -->
+					<button id="addBtn" class="add-btn">
+						<span class="btn-text">Tambah</span>
+						<span class="btn-icon">+</span>
+					</button>
+				</div>
+			</div>
+
+			<!-- Card untuk menampilkan daftar tugas -->
+			<div class="tasks-card glass">
+				<!-- Header daftar tugas -->
+				<div class="tasks-header">
+					<h2 class="tasks-title">Daftar Tugas</h2>
+					<span id="taskCount" class="task-count">0 tugas</span>
+				</div>
+
+				<!-- Tempat untuk menampilkan semua tugas -->
+				<ul id="taskList" class="task-list">
+					<!-- Tugas akan ditambahkan di sini oleh JavaScript -->
+				</ul>
+
+				<!-- Pesan ketika tidak ada tugas -->
+				<div id="emptyState" class="empty-state">
+					<div class="empty-icon">✨</div>
+					<p class="empty-text">
+						Belum ada tugas. Mulai tambahkan tugas pertama Anda!
+					</p>
+				</div>
+			</div>
+
+			<!-- Footer aplikasi -->
+			<div class="app-footer">
+				<p>&copy; 2025 Website Pribadi Naufal Alfi Rabani</p>
+			</div>
+		</div>
+
+		<!-- Link ke file JavaScript kita -->
+		<script src="todolist.js"></script>
+	</body>
+</html>

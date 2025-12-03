@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MEMORY GAME</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="game.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 class="title">MEMORY GAME</h1>
+				<div class="stats">
+					<div class="stat-box">
+						<span class="stat-label">MOVES:</span>
+						<span class="stat-value" id="moves">0</span>
+					</div>
+					<button class="restart-btn" id="restartBtn">
+						<i class="fas fa-redo"></i> RESTART
+					</button>
+				</div>
+			</header>
+
+			<div class="game-board" id="gameBoard"></div>
+			<footer class="footer">
+				<p>&copy; 2025 Website Pribadi Naufal Alfi Rabani</p>
+			</footer>
+		</div>
+		<div id="winModal" class="modal hidden">
+			<div class="modal-content">
+				<h2 class="modal-title">🎉 VICTORY! 🎉</h2>
+				<p class="modal-text">YOU CRUSHED IT!</p>
+
+				<div class="modal-stats">
+					<span>TOTAL MOVES:</span>
+					<span id="finalMoves" class="highlight-text">0</span>
+				</div>
+
+				<button id="playAgainBtn" class="modal-btn">
+					PLAY AGAIN <i class="fas fa-redo"></i>
+				</button>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
