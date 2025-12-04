@@ -57,7 +57,7 @@ h6 {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: rgba(10, 10, 10, 0.95);
+	background: rgba(10, 10, 10, 0.6);
 	backdrop-filter: blur(10px);
 	z-index: 1000;
 	border-bottom: 1px solid var(--border-color);
@@ -65,8 +65,10 @@ h6 {
 }
 
 .navbar.scrolled {
-	background: rgba(10, 10, 10, 0.98);
+	background: rgba(10, 10, 10, 0.85);
+	backdrop-filter: blur(20px);
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-container {
