@@ -51,8 +51,8 @@ navLinks.forEach((link) => {
 
 // Skill bars animation
 const observerOptions = {
-	threshold: 0.5,
-	rootMargin: "0px 0px -100px 0px",
+	threshold: 0.1,
+	rootMargin: "0px 0px -50px 0px",
 };
 
 const skillObserver = new IntersectionObserver((entries) => {
@@ -287,7 +287,7 @@ cursorStyles.innerHTML = `
         transition: width 0.3s, height 0.3s;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 0px) {
         .custom-cursor,
         .cursor-follower {
             display: none;
