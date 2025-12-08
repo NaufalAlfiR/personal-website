@@ -538,6 +538,9 @@ section {
 }
 
 .project-image {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   position: relative;
   height: 250px;
   overflow: hidden;
